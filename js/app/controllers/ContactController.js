@@ -13,6 +13,15 @@ function ContactController() {
     this.removeContact = function (index) {
         this.contacts.splice(index, 1);
     }
+
+    this.name = '';
+    this.phone = '';
+    this.addContact = function() {
+      this.contacts.push({
+        name: this.name,
+        phone: this.phone
+      });
+    }
 }
 
 angular
